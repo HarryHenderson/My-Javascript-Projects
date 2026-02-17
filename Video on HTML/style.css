@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+video{
+    border: 5px solid black;
+    border-radius: 10px;
+    display: block;
+}
+h1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
