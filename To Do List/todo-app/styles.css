@@ -1,0 +1,23 @@
+:root{
+  --bg: linear-gradient(135deg, #00ffff 0%, #001f54 100%);
+  --card: #ffffff;
+  --accent: #3b82f6;
+  --muted: #6b7280;
+}
+*{box-sizing:border-box}
+body{font-family:Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);background-repeat:no-repeat;background-size:cover;min-height:100vh;margin:0;padding:24px;}
+.container{max-width:640px;margin:0 auto;background:var(--card);border-radius:8px;padding:20px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+h1{margin:0 0 12px 0;font-size:1.4rem}
+.input-row{display:flex;gap:8px;margin-bottom:12px}
+#task-input{flex:1;padding:10px;border:1px solid #e5e7eb;border-radius:6px;font-size:1rem}
+#add-btn{padding:10px 14px;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer}
+.task-list{list-style:none;padding:0;margin:0}
+.task-item{display:flex;align-items:center;gap:10px;padding:10px 8px;border-top:1px solid #f1f5f9}
+.task-item:first-child{border-top:0}
+.task-item input[type='checkbox']{width:18px;height:18px}
+.task-item span{flex:1}
+.task-item span.done{text-decoration:line-through;color:var(--muted)}
+.delete-btn{background:transparent;border:1px solid #ef4444;color:#ef4444;padding:6px 8px;border-radius:6px;cursor:pointer}
+.edit-input{flex:1;padding:6px}
+
+@media (max-width:480px){.container{padding:14px}}
